@@ -1,0 +1,63 @@
+/** 根据场合重写element样式 **/
+.login_form {
+  .el-input__inner {
+    padding-left: 40px;
+  }
+  .el-input__prefix {
+    left: 10px;
+  }
+}
+
+.el-menu-vertical {
+  .is-active > .el-submenu__title,
+  .is-active > .el-submenu__title i {
+    color: #fff !important;
+  }
+}
+
+// 解决菜单收缩时，有下级菜单的菜单不隐藏的问题
+.el-menu--collapse > div > .el-submenu > .el-submenu__title span {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: inline-block;
+}
+.el-menu--collapse > div > .el-menu-item .el-submenu__icon-arrow,
+.el-menu--collapse
+  > div
+  > .el-submenu
+  > .el-submenu__title
+  .el-submenu__icon-arrow {
+  display: none;
+}
+
+// 面包屑
+
+.tHeader {
+  height: 2rem;
+  padding: 0.2rem 0.2;
+  // background-color: #eee;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  color: #333;
+  .title {
+    font-size: 0.8rem;
+    line-height: 18px;
+    .iconfont {
+      width: 0.8rem;
+      height: 0.8rem;
+      vertical-align: -0.1rem;
+      margin-right: 0.2rem;
+    }
+  }
+}
+
+
+.el-divider--horizontal{
+    margin: 12px 0!important;
+}
